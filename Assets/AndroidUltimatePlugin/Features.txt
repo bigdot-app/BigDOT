@@ -1,0 +1,57 @@
+List of Features:
+
+1.  Local Notification
+2.  Screen Shot and Share Image
+3.  Share Text
+4.  GPS
+5.  Speech To Text
+6.  Text To Speech
+7.  Immersive Full Screen Mode
+8.  Voice audio recorder with modify pitch
+9. Google App indexing
+10. Get Android package id at Runtime
+11. Get Android version at Runtime
+12. Get Battery Life Percentage
+13. Get Time
+14. Flash light
+15. Normal vibration
+16. Vibration with pattern
+17. Native loading UI
+18. Native Rate my App Popup
+19. Native Alert Popup
+20. Native Toast Message
+21. Set One Time Alarm
+22. Set Repeating Alarm
+23. Set Alarm with Interval
+24. Camera - Take Picture using camera and then share
+25. Image Picker - get image from device and then share
+26. Get Existing Texture from unity3d and then share
+27. Download Image from web and then share
+28. Get Android ID
+29. Get Telephony Device ID
+30. Get Telephony Sim Serial Number
+31. Get Android Advertising ID
+32. Generate Unique ID
+33. Get Wifi IP
+34. Get Wifi SSID
+35. Get Wifi BSSID
+36. Get Wifi Rssi
+37. Get Wifi Speed in MBS
+38. Get Wifi Signal Strength
+39. Check if Wifi Connected
+40. Check if Mobile Connected
+41. Check if Wifi Connection is Fast
+42. Check if Mobile Connection is Fast
+43. Text To Speech Set Locale ex. US,UK,Japanese (20 selections)
+44. Text To Speech Set Pitch
+45. Text To Speech Set Speech Rate
+46. Text To Speech added Events OnStartSpeech,OnDoneSpeech and OnError
+47. Get Account Name
+48. Get Account Email
+49. Get Account Phone Number
+50. Get Contact Name
+51. Get Contact Phone
+52. Create Folder on Pictures or DCIM Directory
+53. Get Picture Directory Path
+54. Get DCIM Directory Path
+55. TTS get available locale on device

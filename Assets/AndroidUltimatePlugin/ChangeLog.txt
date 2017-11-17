@@ -1,0 +1,457 @@
+Version: 1.0
+Date: 6/10/2015
+
+Features:
+1. Local Notification
+2. Screen Shot and Share Image
+3. Share Text
+4. Immersive mode
+5. Voice Audio Recorder with modify pitch option
+6. Google Search App Indexing
+7. GPS
+8. Get Android Package Id at run time
+9. Get Android Version at run time.
+10.Get Battery Life percentage
+11.Flashlight
+12.Nomal Vibration
+13.Vibration with pattern
+14.Native Loading UI
+15.Native Rate my app popup
+16.Native Alert Popup
+17.Native Toast Message
+
+
+Version: 1.1
+Date: 6/28/2015
+
+New Features:
+1. Speech to Text
+2. Text To Speech
+3. GPS (Improved)
+4. Get Battery Life Percentage (Improved)
+
+Version: 1.2
+Date: 7/10/2015
+
+New Features:
+1. Bluetooth communication + tictactoe example
+
+Version: 1.3
+Date: 7/12/2015
+
+Changes:
+Remove GameObject requirements for recieving events (via gameobject)
+Replace by Callback for Recieving events (via code)
+
+Features using this new callback events
+
+1. Bluetooth
+2. GPS
+3. Battery
+4. Speech Recognizer
+
+you can now select specific features to use unlike before that everything is in one place.
+
+Features that is standalone
+
+1. Bluetooth
+2. Battery
+3. Audio recorder
+4. Flashlight
+5. Vibrator
+6. GPS
+
+Version: 1.3.1
+Date: 7/16/2015
+
+make other major features to be independent from main plugin, you can now used specific
+features without adding other permission to manifest even if your not going to use them
+but make sure to add permission which you really used for example vibrator don't forget to
+add vibrator permission.
+
+1. VibratorPlugin
+2. AudioRecorderPlugin
+3. BluetoothPlugin
+4. FlashlightPlugin
+5. GPSPlugin
+
+Version: 1.3.2
+Date: 7/18/2015
+
+added more independent Plugin
+
+1. SpeechPlugin
+
+Version: 1.3.3
+Date: 7/25/2015
+
+1. Set One Time Alarm
+2. Set Repeating Alarm
+3. Set Alarm with Interval
+
+Version: 1.3.4
+Date: 7/28/2015
+
+1. Camera - Take Picture using camera and then share it on social applications
+
+Version: 1.3.5
+Date: 7/31/2015
+
+1. Image Picker - get image from device and then share it on social applications
+2. Get Existing Texture from unity3d and then share it on social applications
+
+Version: 1.3.6
+Date: 8/01/2015
+
+1. Get Android ID
+2. Get Telephony Device ID
+3. Get Telephony Sim Serial Number
+
+Version: 1.3.7
+Date: 8/02/2015
+
+1. Get Android advertising ID
+2. Generate Unique ID
+
+Version: 1.3.8
+Date: 8/04/2015
+1. Download Image from web then share it
+
+Version: 1.3.9
+Date: 8/10/2015
+
+Added name space to utils which is AUP to avoid conflict with other c# script with name Utils
+
+Version: 1.4.0
+Date: 8/14/2015
+
+Added Internet information details
+
+1. Get Wifi IP
+2. Get Wifi SSID
+3. Get Wifi BSSID
+4. Get Wifi Rssi
+5. Get Wifi Speed in MBS
+6. Get Wifi Signal Strength
+7. Check if Wifi Connected
+8. Check if Mobile Connected
+9. Check if Wifi Connection is Fast
+10. Check if Mobile Connection is Fast
+
+Version: 1.4.1
+Date: 8/15/2015
+
+Improved Text to Speech added more features and events
+
+1. Text To Speech Set Locale ex. US,UK,Japanese (20 selections)
+2. Text To Speech Set Pitch
+3. Text To Speech Set Speech Rate
+
+note: this events only works on android API 21 (Lollipop 5.0)
+4. Text To Speech added Events OnStartSpeech,OnDoneSpeech and OnError
+
+Version: 1.4.2
+Date: 8/19/2015
+
+getting account info
+
+1. Get Account Emails
+2. Get Account Name
+
+Version: 1.4.3
+Date: 8/23/2015
+
+getting Contact info
+
+1. Get Contact Name
+2. Get Contact Phone
+
+Version 1.4.4
+Date: 8/30/2015
+
+Note: this changes are made for improvement and optimization
+
+1. Remove AndroidUltimateController
+2. added new Main Class SharePlugin
+3. added new Main Class BatteryPlugin
+4. added new Main Class LocalNotificationPlugin
+5. added new Main Class TimePlugin
+6. added new Main Class AppIndexingPlugin
+7. you can now save Screen Shots on Picture folder or DCIM folder
+8. Android Device Info can get Phone Number now,but some times empty
+9. Account Info can get Phone Number now,but some times empty
+
+Version 1.4.5
+Date: 9/01/2015
+
+added new features on text to speech
+
+1. get Available locale on device
+2. set locale available on device
+
+Version 1.4.6
+Date: 9/03/2015
+
+1. fixed bug on flash light it will not check if flash light features is available on other android device
+2. added new image picker intent to be able to pick images from different app
+
+Version 1.4.7
+Date: 9/15/2015
+
+1. improvement for getting contact number on device (note: known issue some android device wont give this information it depends on device manufacturer)
+2. allow local notification to fire even the application is currently running
+3. remove google play services library (license issue) you need to download it form google developer website
+and added How To use Text file, this file will tell you on how to setup and use this plugin.
+
+Version 1.4.8
+Date: 09/25/2015
+
+1. added custom camera you can now take photo repeatedly and acquire set of paths for you to access them.
+
+Version 1.4.9
+Date: 10/04/2015
+
+1. added speed, altitude and bearing information on GPS (note: this information is depends on your device this is not always available)
+when you received 0 and it never changed value meaning this information is not available on your device
+
+
+version 1.5.0
+Date: 10/31/2015
+
+note: camera is restarting since android os is updated to lollipop but dont worry there's new camera which can take multiple picture
+
+1. added cancel local notification
+
+version 1.5.1
+Date: 11/20/2015
+
+1. added is speaking method for tts for checking if tts engine is speaking
+2. added some fixed for tts when onprogrss and ondone speaking is not called
+3. added check for tts data activity if available to prevent other android device to stop unexpectedly.
+
+version 1.5.2
+Date: 12/25/2015
+
+1. added front camera access on custom camera but right now its for portrait only.
+2. added method on UtilsPlugin for checking Always Finish Activity if 0 it is disable, if 1 is it enable
+
+version 1.5.3
+12/24/2015
+
+Changes:
+1. added google play services demo and controller for google play services plugin from popular open source google play sevices plugin for unity3d on github
+https://github.com/playgameservices/play-games-plugin-for-unity
+(note: all script related to this is commented out just add the google play game services if you to try it at your own risk because google play services
+is always changing it might work or not work)
+
+
+version 1.5.4
+12/30/2015
+
+Changes:
+1. you can now schedule multiple local notifications
+2. you can now cancel specific shedule local notification
+3. created seperate Demo canvas for presentation of updated local notification
+4. remove local notification demo on Share and Experience Demo canvas
+
+version 1.5.5
+
+2/25/2016
+
+changes:
+
+1. local notification improvement now local notification has its own local sql database this is use to save and load notification
+because when device is turn off all scheduled notification will be erase that's how android os works that's why we made this
+improvement now you notification will stay scheduled as long as they are not fired or expired.
+
+2. added runtime permission request for camera plugin this is the start of migrating of this plugin to Marshmallow and above version.
+we do this because user can always revoke permissions, if you are is using camera and permission is revoke it will crashed starting
+from API 23 Marshmallow Android OS. here's some link for those information https://www.android.com/versions/marshmallow-6-0/
+
+version 1.5.6
+
+04/07/2016
+
+1. added flashlight Permission for marshmallow
+2. added gps Permission for marshmallow
+3. added vibrator Permission for marshmallow
+4. fixed extra locale for TTS you can now use some more locale language but it depends on device
+5. added volume controll for TTS and Speech Recognition
+
+version 1.5.7
+
+04/30/2016
+
+1. added marshmallow permission for reading Account info
+2. added marshmallow permission for reading Contact info
+
+version 1.5.8
+06/07/2016
+
+Changes:
+1. Refactor Text to speech
+2. Refactor Speech Recognition
+3. Add Extra Language on Speech Recognition but its depends on mobile devices it may work or not work
+
+version 1.5.9
+07/04/2016
+
+note: you code might changed just a little bit but it's for the good :)
+
+1. Added Specific Notification, you can now notification on specific time ex. 1:30:20 - hour:minute:sec
+2. Notification shows now even your application is running.
+3. Added Callback for Notification load Notification this will send you the list of request code(s) that you used to schedule the notification
+you can now you this to cancel specific pending notification any time.
+4. Added Callback for Alarm load Alarms this will send you the list of request code(s) that you used to schedule the alarm notification
+you can now you this to cancel specific pending alarm notification any time.
+
+version 1.6.0
+07/12/2016
+
+1. added TTS demo2
+2. added Speech Recognizer demo2
+3. Added Extra Speech Locale for Speech Recognizer you can now speak using your native language but
+take note not every language is always available on device so if may work or not work. it depends on your
+device always.
+4. drop support for Unity3d 4.6.3 only supports the latest version
+
+version 1.6.1
+08/21/2016
+
+1. added StatListening with extra settings on Speech Recogniser to modify waiting time to listen and wait but take note this new method is not advisable to use use at your own risk it’s base on the developer documents
+
+2. added enable and disable sound on Alarm Clock
+3. added enable and disable vibration on Alarm Clock
+
+version 1.6.2
+08/28/2016
+
+1. added enable and disable beep on speech plugin
+2. added enable and disable modal on speech plugin
+
+note: on marshmallow tts will have some problem to see what’s going on read this
+https://code.google.com/p/android/issues/detail?id=80696
+
+version 1.6.3
+09/05/2016
+
+1. added Accuracy on GPS plugin Info
+2. added Distance In Meters on GPS plugin info - this is the distance from last point to current point
+3. remove Google Indexing because it cause lots of error and bugs usually to other user of the plugin
+4. Update the How to use text file
+
+version 1.6.4
+09/12/2016
+
+1. added Nmea Listener on GPS plugin to get timeStamp (long) and nmea (string)
+
+version 1.6.5
+09/16/2016
+
+1. added offline mode on Speech Recognizer (Note: based on our test this works but it will use english only)
+2. added Partial Results on Speech Recognizer (note: some times working and sometimes not working but this is expected behavior based on 
+Android Developer Documentation )
+
+version 1.6.6
+09/17/2016
+
+1. Refractor GPS plugin for improvements
+2. Added Start GPS (you can now stop and start gps any time)
+
+version 1.6.7
+10/15/2016
+
+1. Added Dispatcher for almost all callback on the demo and examples
+this dispatcher is very important because this callback needs to run on
+MainThread of unity3d without doing this you might encounter some issues
+
+2. Modify the Speech To Text Demo remove the Text to Speech inside to make it simple and 
+more easy to understand
+
+3. Organize the plugin files
+
+4. Note: i know some of you encounter some crashed or error on issues when running on
+Samsung Android Phone starting Android OS MarshMallow the reason for this is the Samsung
+TextToSpeechEngine have error and bug to fix this just follow this link 
+http://www.gigadrillgames.com/2016/10/15/aup-texttospeech-issues-2016-samsung-texttospeech-engine-bug/
+To make it short use Googel TextToSpeechEngine don't use Samsung TextToSpeechEngine
+
+5. Note: Starting from Android Marshmallow to get Wifi Strength you need to add new permission which is 
+the Access Fine Location or Acces Coarse Location on Android Manifest without doing this you will never get
+Wifi Strength. for more info follow this link
+http://www.gigadrillgames.com/2016/10/15/aup-internet-plugin-internet-to-get-wifi-strength-needs-new-permission-starting-from-marshmallow-android-6-0/ 
+
+version 1.6.8
+12/07/2016
+
+1. added Media Scanner plugin this one will help you refresh the photo gallery to show your new photo using custom camera and screen shots
+
+version 1.6.9
+12/08/2016
+
+1. added SharedPref Plugin to save and load to android sharedpref
+
+version 1.7.0
+01/27/2017
+
+1. fix the error when you run the plugin on the development build
+
+version 1.7.1
+01/29/2017
+
+1. fix the error when you run the plugin on the development build for battery plugin
+2. Major Changes on Android Plugin directory structure our plugin now is inside the Assets/Plugins/Android/aup
+and inside it arrange
+
+	AndroidManifest
+	libs
+	project.properties
+	res
+	SampleAndroidManifest
+
+	Require aar library
+	appcompat-v7-23.4.0.aar
+	support-v4-23.4.0.aar
+3. no need for the old google play services sdk in your project
+
+for more information on these changes please visit this link
+http://www.gigadrillgames.com/2017/01/29/android-ultimate-plugin-major-changes-1-7-1/
+
+version 1.7.2
+02/08/2017
+
+ add local notification new features
+
+ 1. ScheduleEveryDay
+ 2. ScheduleAfterDay
+ 3. ScheduleShortTime
+ 4. ScheduleLongTime
+
+
+ version 1.7.3
+ 02/27/2017
+
+ 1. added alarmAftterDay
+ 2. Android ID MD5 3 types - normal,md5 type1, md5 type2
+ 3. change android id to secure android id
+
+ version 1.7.4
+ 04/30/2017
+
+1. Added Image picker for getting 2 or more images at once
+2. Change Structure the of Image Picker Main class
+3. Added Image Picker Demo 2
+4. Added Setting up Calling package for Speech Recognizer
+
+ version 1.7.5
+ 05/10/2017
+
+ 1. move the audio controller that is used by TTS and Speech Recognizer to utils plugin
+ 2. fixed bug on Auto Max volume after using listen with no beep on Speech Recognizer
+ 3. remove get contact info on demo reason suddenly it breaks because of the new updates on Androis OS
+ we still finding away to fix this but it seems it's not allowed any more'
+
+ version 1.7.6
+ 08/26/2017
+
+ 1. update the version using unity3d 2017
