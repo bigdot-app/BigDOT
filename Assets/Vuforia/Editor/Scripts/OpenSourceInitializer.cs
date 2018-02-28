@@ -28,11 +28,9 @@ public static class OpenSourceInitializer
     static void ReplacePlaceHolders()
     {
         var trackablePlaceholders = Object.FindObjectsOfType<DefaultTrackableBehaviourPlaceholder>().ToList();
-        var smartTerrainPlaceholders = Object.FindObjectsOfType<DefaultSmartTerrainEventHandlerPlaceHolder>().ToList();
         var initErrorsPlaceholders = Object.FindObjectsOfType<DefaultInitializationErrorHandlerPlaceHolder>().ToList();
         
         trackablePlaceholders.ForEach(ReplaceTrackablePlaceHolder);
-        smartTerrainPlaceholders.ForEach(ReplaceSmartTerrainPlaceHolder);
         initErrorsPlaceholders.ForEach(ReplaceInitErrorPlaceHolder);
     }
     
@@ -40,16 +38,6 @@ public static class OpenSourceInitializer
     {
         var go = placeHolder.gameObject;
         go.AddComponent<DefaultTrackableEventHandler>();
-
-        Object.DestroyImmediate(placeHolder);
-    }
-
-    static void ReplaceSmartTerrainPlaceHolder(DefaultSmartTerrainEventHandlerPlaceHolder placeHolder)
-    {
-        var go = placeHolder.gameObject;
-        var eventHandler = go.AddComponent<DefaultSmartTerrainEventHandler>();
-        eventHandler.PropTemplate = placeHolder.PropBehaviour;
-        eventHandler.SurfaceTemplate = placeHolder.SurfaceBehaviour;
 
         Object.DestroyImmediate(placeHolder);
     }
@@ -67,14 +55,6 @@ public static class OpenSourceInitializer
         public void AddDefaultTrackableBehaviour(GameObject go)
         {
             go.AddComponent<DefaultTrackableEventHandler>();
-        }
-
-        public void AddDefaultSmartTerrainEventHandler(GameObject go, PropBehaviour prop,
-            SurfaceBehaviour primarySurface)
-        {
-            var handler = go.AddComponent<DefaultSmartTerrainEventHandler>();
-            handler.PropTemplate = prop.GetComponent<PropBehaviour>();
-            handler.SurfaceTemplate = primarySurface.GetComponent<SurfaceBehaviour>();
         }
 
         public void AddDefaultInitializationErrorHandler(GameObject go)
